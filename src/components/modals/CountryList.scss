@@ -1,0 +1,9 @@
+.countryList{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: 300px;
+}

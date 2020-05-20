@@ -1,0 +1,106 @@
+.header{
+    font-size: 25px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 60%;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    >input{
+        width: 18rem;
+        padding-left: 5px;
+        border: none;
+        border-bottom: 2px solid lightgray;
+        text-align: center;
+    }
+}
+.timeSelection{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    -webkit-animation: swing-in-left-bck 0.6s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    animation: swing-in-left-bck 0.6s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    .fromTo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+        .padding{
+            margin-right: 1rem;
+        }
+        >input{
+            border-radius: 5px;
+            border: 1px lightgray solid;
+            padding: 5px;
+        }
+    }
+}
+.state{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  .basic-single{
+    width: 65% !important;
+    &.css-2b097c-container{
+      width: 65% !important;
+    }
+  }
+}
+.basic-single{
+  width: 65% !important;
+  &.css-2b097c-container{
+    width: 65% !important;
+  }
+}
+.errorMessage{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ff4e4e;
+    border-radius: 5px;
+    padding: 3px;
+    color: white;
+}
+@-webkit-keyframes swing-in-left-bck {
+    0% {
+      -webkit-transform: rotateY(-70deg);
+              transform: rotateY(-70deg);
+      -webkit-transform-origin: left;
+              transform-origin: left;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+      -webkit-transform-origin: left;
+              transform-origin: left;
+      opacity: 1;
+    }
+  }
+  @keyframes swing-in-left-bck {
+    0% {
+      -webkit-transform: rotateY(-70deg);
+              transform: rotateY(-70deg);
+      -webkit-transform-origin: left;
+              transform-origin: left;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+      -webkit-transform-origin: left;
+              transform-origin: left;
+      opacity: 1;
+    }
+  }
+  
+  
